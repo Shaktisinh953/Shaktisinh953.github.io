@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shaktisinh Parmar – Software Developer</title>
+<meta name="description" content="Portfolio of Shaktisinh Parmar, fresher Software Developer (Python, .NET, Django, React) from Gujarat, India.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f5f3ee; --card:#ffffff; --ink:#1d2328; --muted:#5a646c;
+  --line:#d9d5ca; --amber:#f2b200; --amber-ink:#1d2328; --signal:#1f6f50;
+  --head:'Bricolage Grotesque','Segoe UI',system-ui,sans-serif;
+  --body:'Instrument Sans','Segoe UI',system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--paper:#14181b; --card:#1c2226; --ink:#eceae3; --muted:#9aa4ab; --line:#2f383d; --signal:#58c79a;}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.05rem/1.65 var(--body)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.25rem}
+
+/* nav */
+header.nav{position:sticky;top:0;z-index:10;background:var(--paper);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding-top:.8rem;padding-bottom:.8rem}
+.logo{font:800 1.1rem var(--head);text-decoration:none}
+.nav ul{display:flex;gap:1.2rem;list-style:none;margin:0;padding:0;overflow-x:auto}
+.nav li a{text-decoration:none;color:var(--muted);font-weight:500;font-size:.95rem;white-space:nowrap}
+.nav li a:hover{color:var(--ink)}
+
+/* hero */
+.hero{padding:4.5rem 0 3.5rem}
+.hero h1{font:800 clamp(2.8rem,9vw,6.2rem)/.95 var(--head);letter-spacing:-.03em;margin:0 0 1.5rem}
+.plate{display:inline-block;background:var(--amber);color:var(--amber-ink);font:700 1rem var(--head);padding:.45rem 1rem;border:3px solid var(--ink);border-radius:8px;margin-bottom:1.4rem}
+.hero p{max-width:34rem;font-size:1.15rem;color:var(--muted);margin:0 0 2rem}
+.btns{display:flex;flex-wrap:wrap;gap:.8rem}
+.btn{display:inline-block;padding:.75rem 1.3rem;border-radius:8px;font-weight:600;text-decoration:none;border:2px solid var(--ink)}
+.btn.main{background:var(--ink);color:var(--paper)}
+.btn:hover{background:var(--amber);color:var(--amber-ink);border-color:var(--ink)}
+.stripe{height:14px;background:repeating-linear-gradient(-45deg,var(--ink) 0 14px,var(--amber) 14px 28px)}
+
+/* sections */
+section{padding:4rem 0;border-bottom:1px solid var(--line)}
+h2{font:800 clamp(1.8rem,4vw,2.6rem)/1.1 var(--head);letter-spacing:-.02em;margin:0 0 2rem}
+h3{font:700 1.25rem var(--head);margin:0 0 .3rem}
+.muted{color:var(--muted)}
+.grid{display:grid;gap:1.2rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.5rem}
+.tag{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:.15rem .7rem;font-size:.85rem;margin:.2rem .3rem .2rem 0;color:var(--muted)}
+.about{display:grid;gap:2rem;grid-template-columns:1.5fr 1fr}
+.facts{margin:0;padding:0;list-style:none}
+.facts li{padding:.6rem 0;border-bottom:1px solid var(--line)}
+.facts b{display:block;font-size:.85rem;color:var(--muted);font-weight:500}
+
+/* timeline: education is a real sequence */
+.timeline{list-style:none;margin:0;padding:0 0 0 1.6rem;border-left:3px solid var(--ink)}
+.timeline li{position:relative;padding:0 0 1.8rem 1rem}
+.timeline li::before{content:"";position:absolute;left:-2.3rem;top:.35rem;width:16px;height:16px;border-radius:50%;background:var(--amber);border:3px solid var(--ink)}
+.status{font-weight:600;color:var(--signal)}
+
+/* skills */
+.skills dt{font:700 1rem var(--head);margin-top:1rem}
+.skills dd{margin:.2rem 0 0}
+
+/* certificates */
+.cert{border-left:6px solid var(--signal)}
+.cert .dur{font:700 .95rem var(--head);color:var(--signal)}
+
+footer{padding:3rem 0;color:var(--muted)}
+.contact a{display:block;padding:.7rem 0;border-bottom:1px solid var(--line);text-decoration:none;font-weight:500}
+.contact a:hover{color:var(--signal)}
+@media(max-width:720px){.about{grid-template-columns:1fr}.hero{padding-top:3rem}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top">Shaktisinh Parmar</a>
+    <nav aria-label="Main"><ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Internship</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul></nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <span class="plate">Software Developer · Python · .NET</span>
+      <h1>Shaktisinh<br>Parmar</h1>
+      <p>Computer Science Engineering student from Gujarat. I build web apps with Django, ASP.NET and React, and I'm looking for a fresher developer role.</p>
+      <div class="btns">
+        <a class="btn main" href="#projects">See my projects</a>
+        <a class="btn" href="Shaktisinh_Parmar_CV.pdf" download>Download CV</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </div>
+  </div>
+  <div class="stripe" aria-hidden="true"></div>
+
+  <section id="about">
+    <div class="wrap about">
+      <div>
+        <h2>About me</h2>
+        <p>I'm a 7th-semester B.E. Computer Science Engineering student at GTU, and I completed a Diploma in Information Technology in 2023. I learn by building: a citizen traffic-reporting app, a machine-learning sentiment classifier, and a handful of web projects.</p>
+        <p>I'm hardworking, learn quickly and enjoy working in a team. I'm looking for fresher roles as a Software Developer, Python Developer, .NET Developer or Software Engineer in Gujarat.</p>
+      </div>
+      <ul class="facts">
+        <li><b>Location</b>Gujarat, India</li>
+        <li><b>Currently</b>B.E. CSE, 7th semester</li>
+        <li><b>Looking for</b>Fresher developer roles</li>
+        <li><b>Languages</b>English, Hindi, Gujarati</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="wrap">
+      <h2>Education</h2>
+      <ol class="timeline">
+        <li>
+          <h3>SSC (Std. 10)</h3>
+          <div class="muted">Seth Hasnali High School, Dholka · Gujarat State Board</div>
+          <div>Completed 2018</div>
+        </li>
+        <li>
+          <h3>Diploma in Information Technology</h3>
+          <div class="muted">Government Polytechnic College, Rajkot · GTU</div>
+          <div><span class="status">Completed 2023</span> · CGPA 7.02</div>
+        </li>
+        <li>
+          <h3>B.E. in Computer Science Engineering</h3>
+          <div class="muted">Shri Labhubhai Trivedi Institute of Engineering &amp; Technology, Rajkot · GTU</div>
+          <div><span class="status">Completing 2027</span></div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <h2>Skills</h2>
+      <dl class="skills card">
+        <dt>Programming</dt><dd>Python, C#, JavaScript</dd>
+        <dt>Web development</dt><dd>HTML, CSS, Bootstrap, JavaScript, React.js</dd>
+        <dt>Backend and frameworks</dt><dd>Django, ASP.NET, MVC</dd>
+        <dt>Databases</dt><dd>SQL Server, MySQL, PostgreSQL</dd>
+        <dt>Data and ML (Python)</dt><dd>Pandas, Matplotlib, Scikit-learn, NLTK</dd>
+        <dt>Tools</dt><dd>VS Code, Git, GitHub, Figma, Jupyter, Google Colab</dd>
+        <dt>Also learning</dt><dd>Cyber security basics, web design</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>eTrafficEye</h3>
+          <p class="muted">Progressive Web App for reporting traffic violations</p>
+          <p>Citizens upload photo or video evidence of a violation and stay semi-anonymous. The traffic department verifies each report, and the first valid reporter gets 10% of the challan amount as a reward.</p>
+          <p>Built as a two-person team project for Design Engineering at GTU. I worked on development and the UI flow, and we designed screens in Figma.</p>
+          <div><span class="tag">PWA</span><span class="tag">Django</span><span class="tag">React</span><span class="tag">PostgreSQL</span><span class="tag">HTML/CSS/JS</span></div>
+        </article>
+        <article class="card">
+          <h3>Twitter Sentiment Analysis</h3>
+          <p class="muted">Machine-learning text classifier</p>
+          <p>Cleans raw text with NLTK (stopwords, lemmatization), converts it with TF-IDF, and trains a Multinomial Naive Bayes model to label text as positive or negative. Results are shown as a pie chart, with accuracy and a confusion matrix.</p>
+          <p>Completed during my Python internship at YBI Foundation.</p>
+          <div><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Scikit-learn</span><span class="tag">NLTK</span><span class="tag">Matplotlib</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <h2>Internship</h2>
+      <article class="card">
+        <h3>Python Programming and Data Science Intern</h3>
+        <div class="muted">YBI Foundation · July 2025</div>
+        <p>Completed training in Python fundamentals, data handling with Pandas, visualization with Matplotlib, machine learning (logistic regression, K-means) and generative AI basics. Built the Twitter Sentiment Analysis project end to end and wrote the project report.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="certificates">
+    <div class="wrap">
+      <h2>Certificates</h2>
+      <div class="grid">
+        <article class="card cert">
+          <span class="dur">1 month</span>
+          <h3>Web Design</h3>
+          <div class="muted">NSIC (National Small Industries Corporation)</div>
+        </article>
+        <article class="card cert">
+          <span class="dur">1 month</span>
+          <h3>Cyber Security</h3>
+          <div class="muted">NSIC (National Small Industries Corporation)</div>
+        </article>
+        <article class="card cert">
+          <span class="dur">Internship</span>
+          <h3>Python Programming and Data Science</h3>
+          <div class="muted">YBI Foundation</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <div class="contact">
+        <a href="Shaktisinh_Parmar_CV.pdf" download>Download my CV (PDF)</a>
+        <a href="mailto:parmarshakti336@gmail.com">Email: parmarshakti336@gmail.com</a>
+        <a href="tel:+916355242808">Phone: +91 63552 42808</a>
+        <a href="https://www.linkedin.com/in/shaktisinhparmar1610" target="_blank" rel="noopener">LinkedIn: shaktisinhparmar1610</a>
+        <a href="https://github.com/Shaktisinh953" target="_blank" rel="noopener">GitHub: Shaktisinh953</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">© <span id="y">2026</span> Shaktisinh Parmar</div></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
